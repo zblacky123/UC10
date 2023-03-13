@@ -12,7 +12,9 @@
 ## Dentro desse editor de texto coloquei o seguinte código para instalação do ADMINER e o WORDPRESS:
 
 version: '3.1'
+
 services: 
+    
     db:
         image: mysql:latest
         restart: always
