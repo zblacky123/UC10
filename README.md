@@ -10,6 +10,7 @@
 ## Instalei o DOCKER-COMPOSE com o código: sudo apt install docker-compose.
 ## Agora para instalar o ADMINER e o WORDPRESS criei um editor de texto usando a ferramenta VIM com o seguinte código: vim docker-compose.yml.
 ## Dentro desse editor de texto coloquei o seguinte código para instalação do ADMINER e o WORDPRESS:
+
 version: '3.1'
 services: 
     db:
@@ -24,7 +25,6 @@ services:
             - ~/site-db:/var/lib/mysql
         expose: 
             - '3306'
-   
     wordpress:
         image: wordpress
         restart: always
